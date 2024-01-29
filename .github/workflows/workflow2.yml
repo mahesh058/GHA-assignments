@@ -1,4 +1,4 @@
-name: Deployment Exercise 1
+name: workflow2
 on: push
 jobs:
   deploy:
