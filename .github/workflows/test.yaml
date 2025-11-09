@@ -1,8 +1,12 @@
-name: testing GHA
-on: workflow_dispatch
+name: My workflow ## nameof the workflow
+on: workflow_dispatch ##  event which triggers the workflows
+
 jobs:
-  test-job:
+  my-job-one:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        run: echo "checkout"
+      - run: echo "first step"
+  my-second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "second step"
