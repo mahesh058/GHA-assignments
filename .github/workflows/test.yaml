@@ -10,4 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     needs:  my-job-one
     steps:
-      - run: echo "second step"
+      - uses: actions/setup-python@v6
+        name: python version
+        with:
+           python-version: '3.13' 
+      - name: python version check 
+        run: python --version
